@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>1toX - Remember numbers quick to train your brain</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="main">
+    <div id="center">
+        <noscript>
+            <div id="nojs" class="no-select">
+                <h1>Allow JavaScript to run application.</h1>
+                <span class="desc" title="Proceed anyway?" onclick="this.onclick = function() {this.parentNode.parentNode.remove()}">(I have enabled JavaScript)</span>
+            </div>
+        </noscript>
+        <div id="header">
+            <div>
+                <h1 class="main-color" id="name">1toX</h1>
+                <span class="main-color" id="note">Remember the<br>numbers <b>quick!</b></span>
+            </div>
+            <div id="stats">
+                <span class="stat">
+                    <b>Level</b>
+                    <span id="level">
+                        1
+                    </span>
+                </span>
+                <span class="stat">
+                    <b>Score</b>
+                    <span id="score">
+                        0
+                    </span>
+                </span>
+                <span class="stat">
+                    <b>Best</b>
+                    <span id="best">
+                        0
+                    </span>
+                </span>
+                <div id="other">
+                    <span class="main-color btn no-select" id="settings">
+                        <span class="gg-options"></span>
+                    </span>
+                    <span class="main-color btn no-select" id="theme">
+                        <span class="gg-bulb"></span>
+                    </span>
+                    <span id="newgame" class="no-select">
+                        <span id="newgamebutton">New Game</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="game" class="no-select">
+            <span class="num-position"></span>
+        </div>
+        <span id="copyright" title="Project licensed under General Public License 3.0">web-1toX (C) 2022, Pyran1<input type="button" value="Reset Best" onclick="localStorage.removeItem('best')"></span>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
