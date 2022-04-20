@@ -55,9 +55,7 @@ a = () => {
 		document.querySelector('.confirm').addEventListener('click', () => set = 1 && window.history.go(0))
 	})
 
-	for(let i = 0; i < 24; i++) {
-		document.getElementById('game').insertAdjacentHTML('beforeend', document.querySelector('.num-position').outerHTML)
-	}
+	document.getElementById('game').insertAdjacentHTML('beforeend', document.querySelector('.num-position').outerHTML.repeat(24))
 
 	document.querySelectorAll('.num-position').forEach((e) => {
 		e.setAttribute('id', `id${i}`)
